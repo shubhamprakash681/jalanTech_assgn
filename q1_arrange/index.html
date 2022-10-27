@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /* border: 1px solid red; */
+        margin: 0;
+      }
+      .main {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .container {
+        padding: 20px;
+        margin: auto;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 2px solid gray;
+      }
+      .child {
+        margin: 5px 0;
+        padding: 10px;
+      }
+      #sep {
+        margin-top: 25px;
+      }
+      button {
+        width: 80px;
+        border-radius: 5px;
+        border: 1px solid green;
+        background-color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgba(0, 128, 0, 0.26);
+      }
+      input {
+        display: block;
+        width: 456px;
+        outline-color: green;
+      }
+      #result {
+        border: 1px solid gray;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form class="child" id="form">
+          <h2 class="child">Enter Array Elements:</h2>
+          <input
+            required
+            class="child"
+            type="text"
+            name="array_input"
+            id="array_input"
+            placeholder="Enter elements separated by comma (,)"
+          />
+          <button class="child" type="submit">Enter</button>
+        </form>
+        <span class="child" id="sep"> Output result: </span>
+        <div id="result" class="child">[ ]</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/arrange.js"></script>
+</html>

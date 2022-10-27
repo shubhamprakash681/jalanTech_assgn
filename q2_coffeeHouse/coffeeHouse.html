@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/coffee.css">
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <table class="menu">
+          <caption>
+            Menu
+          </caption>
+          <tr>
+            <th>Product / Add-on</th>
+            <th scope="col">Milk</th>
+            <th scope="col">Cream</th>
+            <th scope="col">Latte</th>
+          </tr>
+
+          <tr>
+            <th scope="row">Espresso</th>
+            <td>60</td>
+            <td>75</td>
+            <td>100</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Cappuccino</th>
+            <td>80</td>
+            <td>90</td>
+            <td>125</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Latte</th>
+            <td>100</td>
+            <td>125</td>
+            <td>150</td>
+          </tr>
+        </table>
+
+        <form id="form">
+          <div>
+            <label for="coffee">Select your coffee variant:</label>
+            <select name="coffee" id="coffee">
+              <option value="none" selected disabled hidden>
+                Select an option
+              </option>
+              <option value="espresso">Espresso</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="latte">Latte</option>
+            </select>
+          </div>
+          <div>
+            <label for="addon">Select your Add On:</label>
+            <select name="addon" id="addon">
+              <option value="none" selected disabled hidden>
+                Select a value
+              </option>
+              <option value="milk">Milk</option>
+              <option value="cream">Cream</option>
+              <option value="latte">Latte</option>
+            </select>
+          </div>
+
+          <div class="btn-container">
+            <button type="submit">Add</button>
+            <button id="reset-btn" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <div class="table-container">
+          <table id="bill-table">
+            <caption>
+              Your Bill
+            </caption>
+            <tr>
+              <th>Selected Coffee</th>
+              <th>Selected Add-ons</th>
+              <th>Price</th>
+            </tr>
+            <tbody id="bill-body"></tbody>
+          </table>
+        </div>
+        <div class="total">Total: Rs. 00</div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/coffeeHouse.js"></script>
+</html>
